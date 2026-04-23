@@ -66,8 +66,7 @@ import seaborn as sns
 - Replaced `M` with `000` to convert MB values to KB units
 - Removed `K` suffix
 - Replaced `'Varies with device'` with `NaN`
-- Used `pd.to_numeric(errors='coerce')` to safely handle invalid entries
-- Converted to `float`
+- Converted to `float` using `.astype(float)`
 
 **Installs & Price Columns:**
 - Removed special characters `+`, `,`, `$` using string replacement loop
@@ -170,7 +169,7 @@ import seaborn as sns
 
 | File | Description |
 |---|---|
-| `GooglePlayStore.ipynb` | Jupyter Notebook with complete EDA code |
+| `GooglePlayStore_Clean.ipynb` | Jupyter Notebook with complete EDA code |
 | `google_cleaned.csv` | Cleaned dataset saved after data cleaning steps |
 | `README.md` | Project documentation |
 
@@ -190,7 +189,7 @@ pip install pandas numpy matplotlib seaborn
 
 3. Open the notebook:
 ```bash
-jupyter notebook GooglePlayStore.ipynb
+jupyter notebook GooglePlayStore_Clean.ipynb
 ```
 
 ---
